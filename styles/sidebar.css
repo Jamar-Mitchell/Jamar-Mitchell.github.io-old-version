@@ -1,27 +1,6 @@
-html { 
-	scroll-behavior: smooth;
-	 } 
-
-.makewhite{
-	background-color: white;
-
+a{
+    color:white;
 }
-
-.noborder{
-	border:0px;
-	border-color: white;
-}
-
-.job{
-	height:200px;
-	overflow: none;
-}
-
-.wrapper {
-    display: flex;
-    width: 100%;
-}
-
 #sidebar {
     width: 150px;
     position: fixed;

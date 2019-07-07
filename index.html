@@ -5,17 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- my tab icon -->
+    <link rel="icon" href="src/images/me.png">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="styles/mystyles.css">
+    <link rel="stylesheet" type="text/css" href="styles/character.css">
+    <link rel="stylesheet" type="text/css" href="styles/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
-    <title>Hello, world!</title>
+
+    <title>Jamar's Portfolio</title>
   </head>
   <body>
+
+	<div class="wrapper">
+	    <!-- Sidebar -->
+	    <nav id="sidebar">
+	        <div class="sidebar-header">
+	            <h3>Bootstrap Sidebar</h3>
+	        </div>
+
+	        <ul class="list-unstyled components">
+	            <p>Dummy Heading</p>
+
+	            <li>
+	                <a href="#About">About Me </a>
+	            </li>
+
+	            <li>
+	                <a href="#">Projects</a>
+	            </li>
+	            <li>
+	                <a href="#">Resume</a>
+	            </li>
+	            <li>
+	                <a href="#">Contact</a>
+	            </li>
+	        </ul>
+
+	    </nav>
+	    <!-- Page Content -->
+	    <div id="content">
+
+	        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	            <div class="container-fluid">
+
+	                <button style ="margin-left: 500px; "type="button" id="sidebarCollapse" class="btn btn-info">
+	                    <i class="fas fa-align-left"></i>
+	                    <span>Toggle Sidebar</span>
+	                </button>
+	            </div>
+	        </nav>
+	    </div>
+	</div>
+		
 	<div class="jumbotron jumbotron-fluid makewhite">
 	  <div class="container">
-	    <h1 class="display-2">Jamar Mitchell</h1>
+	    <h1 class="display-3">Jamar Mitchell</h1>
 
 	    <p class="lead">
 	    	 <b>Computer Engineering and Business Management graduate at the University of Ottawa</b> </br>
@@ -25,17 +74,48 @@
 	</div>
 
 
+
+
+
 	<div id ="About" class ="container">
-		<h2 class="display-4" > About Me</h1>
+		<h2 class="display" > About Me</h1>
+
+			<!--<div class= "container2x">
+				<div class= "person" id="jamar">
+			    <div class="tshirt"> 
+			      <h1 class="j"> J</h1>
+			    </div>
+					<div class="leftear"></div>
+					<div class="rightear"></div>
+			    <div class="earring"></div>
+			     <div class="earring2"></div>
+					<div class="hair"></div>
+			    <div class="hair2"></div>
+			    <div class="hair3"></div>
+			    <div class="hair4"></div>
+			    <div class="hair5"></div>
+			    <div class="hair6"></div>
+			    <div class="hair7"></div>
+			    <div class="hair8"></div>
+			    <div class= "neck"></div>
+						<div class="face"> 
+							<div class="eye"></div>
+							<div class="nose"> </div>
+							<div class="mouth"> </div>
+			        <div class="tounge"> </div>
+							</div>
+					</div>
+				</div> -->
+
 		<p class= "lead" >Hello nice to meet you! My name is Jamar Mitchell. I am a <mark>Computer Engineering and Business Mangement graduate</mark> at the University of Ottawa. I love technology, coding and art.</p>
 	</div>
 
 	<div id ="Experience" class ="container">
-		<h2 class="display-4" > Experience</h1>
+		<h2 class="display" > Experience</h1>
 
-		<div class="card border-light mb-3" style="max-width: 1250px;">
+		<div class="card mb-3 noborder" style="max-width: 1250px;">
 		  <div class="row no-gutters">
-		    <div class="col-md-4">
+		    <div class="col-md-4 job">
 		      <img src="src/images/boc.jpg" class="card-img" alt="Bank of canada">
 		    </div>
 		    <div class="col-md-8">
@@ -54,25 +134,122 @@
 		      </div>
 		    </div>
 		  </div>
+
+		  <div class="card border-light mb-3 noborder" style="max-width: 1250px;">
+		  <div class="row no-gutters">
+		    <div class="col-md-4 job">
+		      <img src="src/images/edc.jpg" class="card-img" alt="Bank of canada">
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">Export Development Canada</h5>
+		        <p class="card-text">
+		        <b> IT Systems Developer Student</b> </br>
+		        -Collaborated on a project to build a web app to provide a containerized environment of the
+				applications used in my team.</br>
+				-Automated and managed SFTP scripts to run daily for client for data collection.</br>
+				-Assisted in Onboarding over 50 new users to the Azure Cloud.</br>
+				-Managed, responded and resolved Assyst and JIRA tickets involving support for company
+				used applications while meeting required SLA’s.
+				</p>
+		        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="card border-light mb-3 noborder" style="max-width: 1250px;">
+		  <div class="row no-gutters">
+		    <div class="col-md-4 job">
+		      <img src="src/images/nd.png" class="card-img" alt="Bank of canada">
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">Department of National Defense</h5>
+		        <p class="card-text">
+		        <b> IT Systems Developer Student</b> </br>
+		        -Collaborated on a project to build a web app to provide a containerized environment of the
+				applications used in my team.</br>
+				-Automated and managed SFTP scripts to run daily for client for data collection.</br>
+				-Assisted in Onboarding over 50 new users to the Azure Cloud.</br>
+				-Managed, responded and resolved Assyst and JIRA tickets involving support for company
+				used applications while meeting required SLA’s.
+				</p>
+		        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="card border-light mb-3 noborder" style="max-width: 1250px;">
+		  <div class="row no-gutters">
+		    <div class="col-md-4 job">
+		      <img src="src/images/catsa.jpg" class="card-img" alt="Bank of canada">
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">Canadian Air Transport Security Authority</h5>
+		        <p class="card-text">
+		        <b> IT Systems Developer Student</b> </br>
+		        -Collaborated on a project to build a web app to provide a containerized environment of the
+				applications used in my team.</br>
+				-Automated and managed SFTP scripts to run daily for client for data collection.</br>
+				-Assisted in Onboarding over 50 new users to the Azure Cloud.</br>
+				-Managed, responded and resolved Assyst and JIRA tickets involving support for company
+				used applications while meeting required SLA’s.
+				</p>
+		        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+		      </div>
+		    </div>
+		  </div>
+
+
+
 		</div>
 
 
 	</div>
 
 	<div id ="Languages" class ="container">
-		<h2 class="display-4" > Programming Languages</h1>
+		<h2 class="display" > Programming Languages</h1>
 		<p class= "lead" >Hello nice to meet you! My name is Jamar Mitchell. I am a <mark>Computer Engineering and Business Mangement graduate</mark> at the University of Ottawa. I love technology, coding and art.</p>
 	</div>
 
 	<div id ="Languages" class ="container">
-		<h2 class="display-4" > Programming Languages</h1>
-		<p class= "lead" >Hello nice to meet you! My name is Jamar Mitchell. I am a <mark>Computer Engineering and Business Mangement graduate</mark> at the University of Ottawa. I love technology, coding and art.</p>
+		<h2 class="display" > Programming Languages</h1>
+			
+			<div class="card-deck noborder "> 
+				<div class="card noborder  " style="width: 18rem;=">
+				  <img src="src/images/java.png" class="img-thumbnail noborder" alt="...">
+				</div>
+				<div class="card noborder" style="width: 18rem;">
+				  <img src="src/images/js.png" class="img-thumbnail noborder" alt="...">
+				</div>
+				<div class="card noborder" style="width: 18rem;">
+				  <img src="src/images/hc.png" class="img-thumbnail noborder" alt="...">
+				</div>
+				<div class="card noborder" style="width: 18rem;">
+				  <img src="src/images/python.png" class="img-thumbnail noborder" alt="...">
+				</div>
+			</div>
 	</div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <<script src="scripts/index.js" type="text/javascript" charset="utf-8" async defer></script>
+
+     <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
   </body>
 </html>
