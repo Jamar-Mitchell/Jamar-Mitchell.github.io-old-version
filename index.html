@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
 
-    <title>Jamar's Portfolio</title>
+    <title>Jamar Mitchell</title>
   </head>
   <body>
 
-	<div class="wrapper">
+	<div class="wrapper" >
 	    <!-- Sidebar -->
 	    <nav id="sidebar">
 	        <div class="sidebar-header">
@@ -31,24 +31,32 @@
 	        <ul class="list-unstyled components">
 	            <p>Dummy Heading</p>
 
+
 	            <li>
-	                <a href="#About">About Me </a>
+	                <a href="#top">Home </a>
 	            </li>
 
 	            <li>
-	                <a href="#">Projects</a>
+	                <a href="#About">About Me </a>
 	            </li>
 	            <li>
-	                <a href="#">Resume</a>
+	                <a href="#Experience">Experience </a>
+	            </li>
+
+	            <li>
+	                <a href="#Projects">Projects</a>
 	            </li>
 	            <li>
-	                <a href="#">Contact</a>
+	                <a href="src/images/resume.pdf" download="Jamar_Mitchell_Resume2019">Resume</a>
+	            </li>
+	            <li>
+	                <a href="#Contact">Contact</a>
 	            </li>
 	        </ul>
 
 	    </nav>
 	    <!-- Page Content -->
-	    <div id="content">
+	    <!--<div id="content">
 
 	        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	            <div class="container-fluid">
@@ -59,11 +67,15 @@
 	                </button>
 	            </div>
 	        </nav>
-	    </div>
+	    </div>-->
 	</div>
-		
-	<div class="jumbotron jumbotron-fluid makewhite">
-	  <div class="container">
+
+	
+	<content >
+
+	
+	<div id="top" class="jumbotron jumbotron-fluid makewhite" style="background-image:url(src/images/banner.png),url(src/images/banner.png); background-repeat: repeat-x;">
+	  <div class="container " >
 	    <h1 class="display-3">Jamar Mitchell</h1>
 
 	    <p class="lead">
@@ -74,10 +86,13 @@
 	</div>
 
 
+	
 
 
 
-	<div id ="About" class ="container">
+
+
+	<div id ="About" class ="container spaceout">
 		<h2 class="display" > About Me</h1>
 
 			<!--<div class= "container2x">
@@ -107,10 +122,34 @@
 					</div>
 				</div> -->
 
-		<p class= "lead" >Hello nice to meet you! My name is Jamar Mitchell. I am a <mark>Computer Engineering and Business Mangement graduate</mark> at the University of Ottawa. I love technology, coding and art.</p>
+		
+		<div class="card mb-3 noborder" style="max-width: 1250px;  ">
+		  <div class="row no-gutters">
+		    
+		    <div class="col-md-6">
+		      		        <p class="card-text lead" style="padding-top: 50px;">
+		        	<b> Hello nice to meet you!</b> My name is Jamar Mitchell. I am a <mark>Computer Engineering and Business Mangement graduate</mark> at the University of Ottawa. I love technology, coding and art.
+
+				</p>
+		      </div>
+		  
+
+		    <div class="col-md-4 ">
+		      <img src="src/images/me.png" class="card-img img-thumbnail noborder" style="max-width: 90%; max-height: 90% ; padding-left: 80px;"  alt="Picture of me">
+		    </div>
+
+		  </div>
+		</div>
+
+		<p class= "lead" ></p>
 	</div>
 
-	<div id ="Experience" class ="container">
+
+
+
+
+
+	<div id ="Experience" class ="container spaceout">
 		<h2 class="display" > Experience</h1>
 
 		<div class="card mb-3 noborder" style="max-width: 1250px;">
@@ -134,6 +173,7 @@
 		      </div>
 		    </div>
 		  </div>
+		</div>
 
 		  <div class="card border-light mb-3 noborder" style="max-width: 1250px;">
 		  <div class="row no-gutters">
@@ -200,20 +240,18 @@
 		      </div>
 		    </div>
 		  </div>
+		</div>
+	</div>
 
 
 
 		</div>
-
-
 	</div>
 
-	<div id ="Languages" class ="container">
-		<h2 class="display" > Programming Languages</h1>
-		<p class= "lead" >Hello nice to meet you! My name is Jamar Mitchell. I am a <mark>Computer Engineering and Business Mangement graduate</mark> at the University of Ottawa. I love technology, coding and art.</p>
+</div>
 	</div>
 
-	<div id ="Languages" class ="container">
+	<div id ="Languages" class ="container spaceout">
 		<h2 class="display" > Programming Languages</h1>
 			
 			<div class="card-deck noborder "> 
@@ -233,6 +271,54 @@
 	</div>
 
 
+	<div id ="Projects" class ="container spaceout ">
+		<h2 class="display" > Projects</h1>
+			
+			<div class="card-deck noborder "> 
+				<div class="card noborder  " style="width: 18rem;">
+				 <a href="https://github.com/Jamar-Mitchell/TapAttend">
+				  <img src="src/images/tapattend.png" class="img-thumbnail noborder" alt="...">
+				</a>
+				</div>
+
+				
+				<div class="card noborder" style="width: 18rem;">
+				  <a href="https://github.com/Jamar-Mitchell/CookHelper">	
+				  <img src="src/images//CookHelper.jpg" class="img-thumbnail noborder" alt="...">
+				   </a>
+				</div>
+
+				<div class="card noborder" style="width: 18rem;">
+				  <a href="https://github.com/Jamar-Mitchell/AE-Applications-Web-App">
+				  <img src="src/images/ae.png" class="img-thumbnail noborder" alt="...">
+				    </a>
+				</div>
+
+				<div class="card noborder" style="width: 18rem;">
+				  <img  src="src/images/puzzle.png" class="img-thumbnail noborder" style="border-radius: 95%;" alt="...">
+				</div>
+
+			</div>
+	</div>
+
+
+	<div style=" height:300px; background-image:url(src/images/bannerf.png),url(src/images/bannerf.png); background-repeat: repeat-x;top: 0; ">
+	  <div style="text-align: center; padding-top: 75px;" class="container " >
+	    <h2 id="Contact" class="display">Contact</h1>
+
+	    <p class="lead">
+	    	 <b><a style="color:black" href="mailto:someone@example.com">Email: jmitc008@uottawa.ca</a> </br>
+	    	 	Tel: 289-923-1052
+	    	 </b>
+
+	    </p>
+	  </div>
+	</div>
+
+	</content>
+		
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -240,7 +326,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <<script src="scripts/index.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="scripts/index.js" type="text/javascript" charset="utf-8" async defer></script>
 
      <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
